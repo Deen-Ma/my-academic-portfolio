@@ -69,8 +69,8 @@ export default function MDXContent({ source }: MDXContentProps) {
         components={components}
         options={{
           mdxOptions: {
-            remarkPlugins: [remarkMath, remarkGfm],
-            rehypePlugins: [rehypeKatex, rehypeHighlight],
+            remarkPlugins: [remarkMath, remarkGfm] as any,
+            rehypePlugins: [rehypeKatex, rehypeHighlight] as any,
           },
         }}
       />
